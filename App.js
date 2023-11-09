@@ -8,6 +8,9 @@ import Video from "./screens/video";
 import Profile from "./screens/profile";
 import ForYou from "./screens/for-you";
 import NewsDetail from "./screens/news-detail";
+import DetailProduct from "./screens/DetailProduct";
+import Login from "./screens/Login";
+import PromoProuduct from "./screens/PromoProuduct";
 
 // Navigator Declaration
 const Stack = createNativeStackNavigator();
@@ -70,6 +73,9 @@ const App = () => {
     <NativeBaseProvider>
       <NavigationContainer>
         <Stack.Navigator>
+          <Stack.Screen name="Login" component={Login} options={noHead} />
+          <Stack.Screen name="DetailProduct" component={DetailProduct} options={noHead} />
+          <Stack.Screen name="PromoProduct" component={PromoProuduct} options={noHead} />
           <Stack.Screen name="Tabs" component={Tabs} options={noHead} />
           <Stack.Screen
             name="News Detail"

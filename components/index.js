@@ -1,3 +1,4 @@
 import Header from "./header";
+import Gap from './gap'
 
-export { Header };
+export { Header, Gap };
